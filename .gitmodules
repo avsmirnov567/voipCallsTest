@@ -1,0 +1,3 @@
+[submodule "Submodules/StreamingKit"]
+	path = Submodules/StreamingKit
+	url = https://github.com/avsmirnov567/StreamingKit.git

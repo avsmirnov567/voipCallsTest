@@ -1,0 +1,16 @@
+PODS:
+  - StreamingKit (0.1.29)
+
+DEPENDENCIES:
+  - StreamingKit (from `Submodules/StreamingKit`)
+
+EXTERNAL SOURCES:
+  StreamingKit:
+    :path: Submodules/StreamingKit
+
+SPEC CHECKSUMS:
+  StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
+
+PODFILE CHECKSUM: a2646259144acbb7d58e2d31c100b83e55aa876f
+
+COCOAPODS: 1.2.0

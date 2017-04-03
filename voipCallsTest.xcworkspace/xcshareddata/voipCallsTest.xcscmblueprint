@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E216955693E5528C4A7851EFAA5D363E10781F18",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E216955693E5528C4A7851EFAA5D363E10781F18" : 9223372036854775807,
+    "3E9414865BAE5433092B9D136FFC1F054EA505C2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "16730DC6-AA29-4E16-998F-57975034397B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E216955693E5528C4A7851EFAA5D363E10781F18" : "voipCallsTest\/",
+    "3E9414865BAE5433092B9D136FFC1F054EA505C2" : "voipCallsTest\/Submodules\/StreamingKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "voipCallsTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "voipCallsTest.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/avsmirnov567\/StreamingKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E9414865BAE5433092B9D136FFC1F054EA505C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/avsmirnov567\/voipCallsTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E216955693E5528C4A7851EFAA5D363E10781F18"
+    }
+  ]
+}
