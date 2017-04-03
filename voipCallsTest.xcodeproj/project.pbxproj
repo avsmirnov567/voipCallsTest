@@ -12,7 +12,12 @@
 		E1F409451E9289D2007E36CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F409441E9289D2007E36CC /* ViewController.m */; };
 		E1F409481E9289D2007E36CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F409461E9289D2007E36CC /* Main.storyboard */; };
 		E1F4094A1E9289D2007E36CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F409491E9289D2007E36CC /* Assets.xcassets */; };
-		E1F4094D1E9289D2007E36CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F4094B1E9289D2007E36CC /* LaunchScreen.storyboard */; };
+		E1F4095A1E928C1D007E36CC /* NSData+ASBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F409571E928C1D007E36CC /* NSData+ASBinary.m */; };
+		E1F4095B1E928C1D007E36CC /* NSStream+BoundPairAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F409591E928C1D007E36CC /* NSStream+BoundPairAdditions.m */; };
+		E1F409641E928C5B007E36CC /* WMCAACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F4095D1E928C5B007E36CC /* WMCAACEncoder.m */; };
+		E1F409651E928C5B007E36CC /* WMCBufferWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F4095F1E928C5B007E36CC /* WMCBufferWriter.m */; };
+		E1F409661E928C5B007E36CC /* WMCCallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F409611E928C5B007E36CC /* WMCCallManager.m */; };
+		E1F409671E928C5B007E36CC /* WMCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F409631E928C5B007E36CC /* WMCRecorder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +29,19 @@
 		E1F409441E9289D2007E36CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E1F409471E9289D2007E36CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1F409491E9289D2007E36CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1F4094C1E9289D2007E36CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1F4094E1E9289D2007E36CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F409561E928C1D007E36CC /* NSData+ASBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ASBinary.h"; path = "Extentions/NSData+ASBinary.h"; sourceTree = "<group>"; };
+		E1F409571E928C1D007E36CC /* NSData+ASBinary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ASBinary.m"; path = "Extentions/NSData+ASBinary.m"; sourceTree = "<group>"; };
+		E1F409581E928C1D007E36CC /* NSStream+BoundPairAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSStream+BoundPairAdditions.h"; path = "Extentions/NSStream+BoundPairAdditions.h"; sourceTree = "<group>"; };
+		E1F409591E928C1D007E36CC /* NSStream+BoundPairAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSStream+BoundPairAdditions.m"; path = "Extentions/NSStream+BoundPairAdditions.m"; sourceTree = "<group>"; };
+		E1F4095C1E928C5B007E36CC /* WMCAACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMCAACEncoder.h; path = Utils/WMCAACEncoder.h; sourceTree = "<group>"; };
+		E1F4095D1E928C5B007E36CC /* WMCAACEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMCAACEncoder.m; path = Utils/WMCAACEncoder.m; sourceTree = "<group>"; };
+		E1F4095E1E928C5B007E36CC /* WMCBufferWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMCBufferWriter.h; path = Utils/WMCBufferWriter.h; sourceTree = "<group>"; };
+		E1F4095F1E928C5B007E36CC /* WMCBufferWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMCBufferWriter.m; path = Utils/WMCBufferWriter.m; sourceTree = "<group>"; };
+		E1F409601E928C5B007E36CC /* WMCCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMCCallManager.h; path = Utils/WMCCallManager.h; sourceTree = "<group>"; };
+		E1F409611E928C5B007E36CC /* WMCCallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMCCallManager.m; path = Utils/WMCCallManager.m; sourceTree = "<group>"; };
+		E1F409621E928C5B007E36CC /* WMCRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMCRecorder.h; path = Utils/WMCRecorder.h; sourceTree = "<group>"; };
+		E1F409631E928C5B007E36CC /* WMCRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMCRecorder.m; path = Utils/WMCRecorder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +74,13 @@
 		E1F4093C1E9289D2007E36CC /* voipCallsTest */ = {
 			isa = PBXGroup;
 			children = (
+				E1F409541E928BD8007E36CC /* Extentions */,
+				E1F409551E928BE6007E36CC /* Utils */,
 				E1F409401E9289D2007E36CC /* AppDelegate.h */,
 				E1F409411E9289D2007E36CC /* AppDelegate.m */,
 				E1F409431E9289D2007E36CC /* ViewController.h */,
 				E1F409441E9289D2007E36CC /* ViewController.m */,
 				E1F409461E9289D2007E36CC /* Main.storyboard */,
-				E1F409491E9289D2007E36CC /* Assets.xcassets */,
-				E1F4094B1E9289D2007E36CC /* LaunchScreen.storyboard */,
-				E1F4094E1E9289D2007E36CC /* Info.plist */,
 				E1F4093D1E9289D2007E36CC /* Supporting Files */,
 			);
 			path = voipCallsTest;
@@ -74,9 +89,37 @@
 		E1F4093D1E9289D2007E36CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1F409491E9289D2007E36CC /* Assets.xcassets */,
+				E1F4094E1E9289D2007E36CC /* Info.plist */,
 				E1F4093E1E9289D2007E36CC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1F409541E928BD8007E36CC /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E1F409561E928C1D007E36CC /* NSData+ASBinary.h */,
+				E1F409571E928C1D007E36CC /* NSData+ASBinary.m */,
+				E1F409581E928C1D007E36CC /* NSStream+BoundPairAdditions.h */,
+				E1F409591E928C1D007E36CC /* NSStream+BoundPairAdditions.m */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		E1F409551E928BE6007E36CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1F4095C1E928C5B007E36CC /* WMCAACEncoder.h */,
+				E1F4095D1E928C5B007E36CC /* WMCAACEncoder.m */,
+				E1F4095E1E928C5B007E36CC /* WMCBufferWriter.h */,
+				E1F4095F1E928C5B007E36CC /* WMCBufferWriter.m */,
+				E1F409601E928C5B007E36CC /* WMCCallManager.h */,
+				E1F409611E928C5B007E36CC /* WMCCallManager.m */,
+				E1F409621E928C5B007E36CC /* WMCRecorder.h */,
+				E1F409631E928C5B007E36CC /* WMCRecorder.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +181,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F4094D1E9289D2007E36CC /* LaunchScreen.storyboard in Resources */,
 				E1F4094A1E9289D2007E36CC /* Assets.xcassets in Resources */,
 				E1F409481E9289D2007E36CC /* Main.storyboard in Resources */,
 			);
@@ -152,8 +194,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F409451E9289D2007E36CC /* ViewController.m in Sources */,
+				E1F409671E928C5B007E36CC /* WMCRecorder.m in Sources */,
+				E1F409661E928C5B007E36CC /* WMCCallManager.m in Sources */,
+				E1F4095B1E928C1D007E36CC /* NSStream+BoundPairAdditions.m in Sources */,
 				E1F409421E9289D2007E36CC /* AppDelegate.m in Sources */,
 				E1F4093F1E9289D2007E36CC /* main.m in Sources */,
+				E1F409641E928C5B007E36CC /* WMCAACEncoder.m in Sources */,
+				E1F4095A1E928C1D007E36CC /* NSData+ASBinary.m in Sources */,
+				E1F409651E928C5B007E36CC /* WMCBufferWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,14 +214,6 @@
 				E1F409471E9289D2007E36CC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E1F4094B1E9289D2007E36CC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1F4094C1E9289D2007E36CC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
