@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "WMCCallManager.h"
 
-@interface ViewController ()
+@interface ViewController () <WMCCallManagerDelegate>
+
+@property (nonatomic, strong) WMCCallManager *callManager;
+@property (nonatomic, assign) UInt32 sendedDataLength;
 
 @end
 
@@ -16,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _callManager = [[WMCCallManager alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -25,5 +30,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)callAction:(id)sender {
+    [_buttonCall setEnabled:NO];
+    [_buttonCall setTitle:@"Звоним ребёнку" forState:UIControlStateDisabled];
+    [_roleSwitcher setEnabled:NO];
+    [_callManager callChildWithId:261473];
+}
+
+- (IBAction)answerAction:(id)sender {
+    [_buttonAnswer setEnabled:NO];
+    [_buttonAnswer setTitle:@"Отвечаем родителю" forState:UIControlStateDisabled];
+    [_roleSwitcher setEnabled:NO];
+    [_callManager answerToCall];
+}
+
+- (IBAction)switchAction:(id)sender {
+    if (_roleSwitcher.on) {
+        [_buttonCall setEnabled:NO];
+        [_buttonAnswer setEnabled:YES];
+    } else {
+        [_buttonCall setEnabled:YES];
+        [_buttonAnswer setEnabled:NO];
+    }
+}
+
+- (void)sendedDatalength:(UInt32)length {
+    _sendedDataLength += length;
+    [_labelMain setText:[NSString stringWithFormat:@"%u", (unsigned int)_sendedDataLength]];
+}
 
 @end

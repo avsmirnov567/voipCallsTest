@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonCall;
+@property (weak, nonatomic) IBOutlet UIButton *buttonAnswer;
+@property (weak, nonatomic) IBOutlet UISwitch *roleSwitcher;
+@property (weak, nonatomic) IBOutlet UILabel *labelMain;
 
 @end
 

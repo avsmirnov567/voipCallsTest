@@ -180,7 +180,7 @@
 				TargetAttributes = {
 					E1F409391E9289D2007E36CC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2RVNZTUX32;
+						DevelopmentTeam = GBS327G4QD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -387,7 +387,7 @@
 			baseConfigurationReference = 36AB474897273F1E62625558 /* Pods-voipCallsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RVNZTUX32;
+				DEVELOPMENT_TEAM = GBS327G4QD;
 				INFOPLIST_FILE = voipCallsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lineapp.voipCallsTest;
@@ -400,7 +400,7 @@
 			baseConfigurationReference = E102C0F88978D05FBAA33C89 /* Pods-voipCallsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RVNZTUX32;
+				DEVELOPMENT_TEAM = GBS327G4QD;
 				INFOPLIST_FILE = voipCallsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lineapp.voipCallsTest;
@@ -427,6 +427,7 @@
 				E1F409531E9289D2007E36CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
