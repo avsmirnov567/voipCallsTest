@@ -84,7 +84,7 @@
 }
 
 - (void)sendRequestWithChildId: (NSInteger)childId {
-    const char dataTobeSent[] = {0xff, 0xf2, 0x1f}; //11111111 11110010 00011111 - для родителя
+    const char dataTobeSent[] = {0xff, 0xf1, 0x1f}; //11111111 11110010 00011111 - для родителя
     uint8_t dataArray[3];
     
     for (NSInteger i = 0; i < 3; i++) {
@@ -122,7 +122,7 @@
 }
 
 - (void)connectAsChild {
-    const char dataTobeSent[] = {0xff, 0xf2, 0x2f}; //11111111 11110010 00101111 - для ребёнка
+    const char dataTobeSent[] = {0xff, 0xf1, 0x2f}; //11111111 11110010 00101111 - для ребёнка
     uint8_t dataArray[3];
     
     for (NSInteger i = 0; i < 3; i++) {
@@ -189,15 +189,15 @@
                     if (length > 0) {
                         if (!_serverApprovedConnection){
                             if (buffer[0] == 0) {
+                                
                                 NSLog(@"Server approved connection");
                                 _serverApprovedConnection = YES;
-                                if (!_connectedAsParent) {
                                 
-                                    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-                                    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-                                    
-                                    [_recorder startRecording];
-                                }
+                                [_recorder startRecording];
+                                
+                                AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+                                [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+                                
                             } else {
                                 NSLog(@"Server NOT approved connection");
                                 _serverApprovedConnection = NO;
